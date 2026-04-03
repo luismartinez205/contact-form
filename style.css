@@ -219,3 +219,9 @@ button:hover {
   
   padding: 0px;
 }
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #1f7a68;
+    outline-offset: 1px;
+}
