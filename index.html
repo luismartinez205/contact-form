@@ -9,58 +9,63 @@
 </head>
 
 <body>
-    <form class="form-container">
+    <form id="form" class="form-container" novalidate>
         <h2>Contact Us</h2>
 
         <div class="row">
             <div class="form-group">
                 <label>First Name *</label>
                 <input type="text" required>
+                <small class="error-message">Este campo es obligatorio</small>
             </div>
 
             <div class="form-group">
                 <label>Last Name *</label>
                 <input type="text" required>
+                <small class="error-message">Este campo es obligatorio</small>
             </div>
         </div>
 
         <div class="form-group">
             <label>Email Address *</label>
-            <input type="email" required>
+            <input type="email" id="email" required>
+            <small class="error-message">Este campo es obligatorio</small>
         </div>
 
         <div class="form-group">
             <label>Query Type *</label>
             <div class="radio-group">
                 <label>
-                    <input type="radio" name="query" id="general">
+                    <input type="radio" name="query" id="general" required>
                     <span class="icon-radio"></span>
                     General Enquiry
                 </label>
                 <label>
-                    <input type="radio" name="query" id="support">
+                    <input type="radio" name="query" id="support" required>
                     <span class="icon-radio"></span>
                     Support Request
                 </label>
             </div>
+            <small class="error-message">Este campo es obligatorio</small>
         </div>
 
         <div class="form-group">
             <label>Message *</label>
             <textarea required></textarea>
+            <small class="error-message">Este campo es obligatorio</small>
         </div>
 
         <div class="form-group checkbox">
             <label>
-                <input type="checkbox">
+                <input type="checkbox" id="consent" required>
                 <span class="icon-checkbox"></span>
-                I consent to being contacted by the team *
+                I consent to being contacted by the team *                
             </label>
-        </div>
-
+            <small class="error-message">Este campo es obligatorio</small>
+        </div>         
         <button type="submit">Submit</button>
     </form>
 
 </body>
-
+<script src="main.js"></script>
 </html>

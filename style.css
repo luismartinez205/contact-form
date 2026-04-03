@@ -49,14 +49,14 @@ h2 {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
 label {
     display: block;
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 input,
@@ -80,7 +80,7 @@ textarea {
 .form-group input[type="checkbox"] {
     position: absolute;
     opacity: 0;
-    pointer-events: none;
+    
 }
 
 .radio-group {
@@ -147,10 +147,10 @@ textarea {
 }
 
 .checkbox {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+        display: flex;
+    gap: 5px;
     font-size: 12px;
+    flex-direction: column;
 
     @media (max-width: 600px) {
        
@@ -160,7 +160,7 @@ textarea {
 
 button {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     background-color: #1f7a68;
     color: white;
     font-weight: bold;
@@ -189,3 +189,33 @@ button:hover {
     border: 0px;
 }
 
+.form-group.error input,
+.form-group.error textarea {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+
+
+.form-group.error .error-message {
+  display: block;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 12px;
+ 
+}
+
+/* radios error */
+.form-group.error .radio-group {
+ 
+  padding: 0px;
+}
+
+/* checkbox error */
+.form-group.checkbox.error {
+  
+  padding: 0px;
+}
