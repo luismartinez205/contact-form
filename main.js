@@ -43,7 +43,18 @@ form.addEventListener("submit", function (e) {
     checkboxGroup.classList.remove("error");
   }
 
-  if (isValid) {
-    alert("Formulario enviado 🚀");
-  }
+  const toast = document.getElementById("toast");
+
+if (isValid) {
+  toast.classList.add("show");
+
+  form.reset();
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 4000);
+}
 });
+
+
+

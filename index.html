@@ -9,6 +9,15 @@
 </head>
 
 <body>
+    <div id="toast" class="toast">
+  <div class="toast-content">
+    <span class="icon">✔</span>
+    <div>
+      <strong>Message Sent!</strong>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </div>
+</div>
     <form id="form" class="form-container" novalidate>
         <h2>Contact Us</h2>
 
@@ -16,20 +25,20 @@
             <div class="form-group">
                 <label>First Name *</label>
                 <input type="text" required>
-                <small class="error-message">Este campo es obligatorio</small>
+                <small class="error-message">This field is required</small>
             </div>
 
             <div class="form-group">
                 <label>Last Name *</label>
                 <input type="text" required>
-                <small class="error-message">Este campo es obligatorio</small>
+                <small class="error-message">This field is required</small>
             </div>
         </div>
 
         <div class="form-group">
             <label>Email Address *</label>
             <input type="email" id="email" required>
-            <small class="error-message">Este campo es obligatorio</small>
+            <small class="error-message">Please enter a valid email address</small>
         </div>
 
         <div class="form-group">
@@ -46,13 +55,13 @@
                     Support Request
                 </label>
             </div>
-            <small class="error-message">Este campo es obligatorio</small>
+            <small class="error-message">Please select a query type</small>
         </div>
 
         <div class="form-group">
             <label>Message *</label>
             <textarea required></textarea>
-            <small class="error-message">Este campo es obligatorio</small>
+            <small class="error-message">This field is required</small>
         </div>
 
         <div class="form-group checkbox">
@@ -61,9 +70,9 @@
                 <span class="icon-checkbox"></span>
                 I consent to being contacted by the team *                
             </label>
-            <small class="error-message">Este campo es obligatorio</small>
+            <small class="error-message">To submit this form, you must consent to being contacted by the team</small>
         </div>         
-        <button type="submit">Submit</button>
+        <button type="submit">Submit</button>        
     </form>
 
 </body>
